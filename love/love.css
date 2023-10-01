@@ -633,22 +633,26 @@ body{
 }
 .giftbox{
     position: relative;
-    width: 40%;
     height: 100%;
 }
 .giftbox .img{
     position: absolute;
-    width: 180px;
-    bottom: -10px;
-    left: 50px;
+    width: 110px;
+    left: 0;
     z-index: 100;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    opacity: 0.5;
 }
+
 .giftbox img{
     width: 100%;
 }
 .textLetter{
     position: relative;
-    width: 60%;
+    /* width: 60%; */
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -665,6 +669,7 @@ body{
     padding: 0px 10px;
     margin-top: 10px;
     font-family: 'Dancing Script', cursive;
+    z-index: 999;
 
 }
 .fa-xmark{
@@ -712,8 +717,22 @@ body{
         width: auto;
     }
     .textLetter {
-        width: 80%;
+        width: 100%;
         z-index: 200;
+    }
+    .giftbox .img {
+        position: absolute;
+        width: 110px;
+        left: 0;
+        z-index: 100;
+        top: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .boxLetter .formLetter {
+        height: 350px;
     }
 }
 
@@ -739,12 +758,12 @@ body{
         z-index: 100;
         top: 0;
         display: flex;
-        align-items: center;
+        align-items: flex-start ;
         height: 100%;
     }
 
     .giftbox {
-        width: 30%;
+        width: initial;
     }
 
     .boxLetter {
@@ -755,7 +774,7 @@ body{
     }
 
     .textLetter .contentLetter  {
-        font-size: 17.7px;
+        font-size: 18.5px;
         margin: 0;
     }
 
@@ -765,6 +784,18 @@ body{
 
     .giftbox img {
         width: 70px;
+    }
+
+    .boxSlider .left, .boxSlider .right {
+        color: #ff5b9a;
+    }
+
+    .boxLetter .formLetter{
+        height: 70vh;
+    }
+
+    .boxHandsInput .handsCatImgInput img {
+        width: 1px;
     }
 }
 
