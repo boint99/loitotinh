@@ -237,7 +237,10 @@ body{
 }
 
 @media (max-width: 575.98px) {
-    .progress-bar {
+    .loading {
         width: 300px;
+    }
+    .progress-bar {
+        width: 100%;
     }
 }
