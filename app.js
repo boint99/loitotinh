@@ -17,14 +17,15 @@ button.addEventListener("click", function(){
     button.style.transform = "scale(0.8)";
     setTimeout(()=>{
         button.style.transform = "scale(1)";
-        window.location.href = "./love/love.html"
+        // window.location.href = "./love/love.html"
+        window.location.href = "./love/heart.html"
     },200)
 })
 
 function progressInterva(){
     if(count == 100 && percentWidth == 100){
         clearInterval(progressLoad)
-        percent.textContent = "Ok rùi đó:)";
+        percent.textContent = "Tặng Em Ngàn Trái Tim";
         percent.style.letterSpacing = "1px";
         textBox.style.transform = "scale(1.3)"
         heartItem3.style.animation = "1s heartScale forwards"
